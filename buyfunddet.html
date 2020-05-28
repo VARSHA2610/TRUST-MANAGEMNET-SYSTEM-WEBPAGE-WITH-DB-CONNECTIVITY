@@ -1,0 +1,28 @@
+<html>
+<body>
+<h1>HELLO</H1>
+<button onclick="myFunction()">FOR INFO</button>
+<p id="demo">You can get your fund</p>
+<script>
+var person = {
+  firstName: "Varsha",
+  lastName: " Kumar",
+  age: 20,
+  fundamount:10000,
+  agedisp : function() {
+    return this.age;
+}
+};
+var text = document.getElementById("demo").innerHTML;
+  document.getElementById("demo").innerHTML = text.toUpperCase();
+document.getElementById("demo").innerHTML = text3;
+function myFunction() {
+ confirm("Do You want to know the fund amount and donor???");
+
+  document.getElementById("demo").innerHTML =
+person.firstName + " offered Rs." +person.fundamount +" . Age:" + person.agedisp();
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+.input-container {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.icon {
+  padding: 10px;
+  background: green;
+  color: yellow;
+  min-width: 50px;
+  text-align: center;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid black;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: green;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+body{
+  background-image: url("clothes.jpeg");
+  height: 700px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+ }
+div {
+ 
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+</style>
+</head>
+<body>
+
+<center>
+
+<form method="post"  style="max-width:500px;margin:auto" action="clothesdet.php">
+<div style="background-color:black;color:white;padding:20px;"><div></div></h1>
+  <h2>Upload.</h2>
+<div class="input-container">
+    <i class="fa fa-user icon"></i>
+    <input class="input-field" type="name" placeholder="Name" name="username"   required>
+  </div>
+ <div class="input-container">
+    <i class="fa fa-envelope icon"></i>
+    <input class="input-field" type="email" placeholder="Email" name="email" required>
+  </div>
+  
+  
+<div class="input-container">
+    <i class="fa fa-phone icon"></i>
+    <input class="input-field" type="tel" placeholder="phonenumber" name="phone" maxlength=10   required>
+  </div>
+<div class="input-container">
+    <i class="fa fa-home icon"></i>
+    <input class="input-field" type="text" placeholder="address" name="add"  required>
+  </div>
+<div class="input-container">
+    <i class="fa fa-file icon"></i>
+    <input class="input-field" type="number" placeholder="Quantity" name="qua" maxlength=5  oninput="myFunction()" required>
+  </div>
+
+  <input type="submit" class="btn" value="Donate" name="submit">
+</form>
+</center>
+
+
+</body>
+</html>
